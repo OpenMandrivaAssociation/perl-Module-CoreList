@@ -1,6 +1,6 @@
 %define module	Module-CoreList
 %define name	perl-%{module}
-%define version	2.07
+%define version	2.09
 %define	release	%mkrel 1
 
 Name:		%{name}
