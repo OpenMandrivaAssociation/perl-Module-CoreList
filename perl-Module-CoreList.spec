@@ -1,5 +1,5 @@
 %define upstream_name	 Module-CoreList
-%define upstream_version 2.17
+%define upstream_version 2.18
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -9,7 +9,7 @@ Summary:	Tell what modules shipped with versions of perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 URL:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstream_version}.tar.gz
 
 %if %{mdkversion} < 1010
 BuildRequires:	perl-devel
