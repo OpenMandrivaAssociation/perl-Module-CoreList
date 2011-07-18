@@ -1,5 +1,5 @@
 %define upstream_name	 Module-CoreList
-%define upstream_version 2.52
+%define upstream_version 2.53
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
