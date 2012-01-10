@@ -1,9 +1,9 @@
 %define upstream_name	 Module-CoreList
-%define upstream_version 2.53
+%define upstream_version 2.59
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 1
+Release:	1
 
 Summary:	Tell what modules shipped with versions of perl
 License:	GPL+ or Artistic
@@ -15,7 +15,6 @@ Source0:	http://www.cpan.org/modules/by-module/Module/%{upstream_name}-%{upstrea
 BuildRequires:	perl-devel
 %endif
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 Module::CoreList contains data about what perl modules are shipped
@@ -33,14 +32,9 @@ command-line utility, corelist, to retrieve this information easily.
 %{__make} test
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
-%clean 
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc Changes README
 %{perl_vendorlib}/Module
 %{_mandir}/*/*
