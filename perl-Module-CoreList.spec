@@ -4,7 +4,7 @@
 Summary:	Tell what modules shipped with versions of perl
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	4
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -32,11 +32,12 @@ command-line utility, corelist, to retrieve this information easily.
 %makeinstall_std
 
 # MD 20121223 conflcits with perl 5.16
-rm -f %{buildroot}/%{_mandir}/man1/corelist.1*
+rm -f %{buildroot}/%{_mandir}/man1/corelist.1* %buildroot%_bindir/corelist
+rm -rf %buildroot/*
 
 %files
-%doc Changes README
-%{perl_vendorlib}/Module
-%{_mandir}/*/*
-%{_bindir}/corelist
+#doc Changes README
+#{perl_vendorlib}/Module
+#{_mandir}/*/*
+#{_bindir}/corelist
 
