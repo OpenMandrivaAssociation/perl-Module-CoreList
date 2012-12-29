@@ -32,7 +32,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %files
-#doc Changes README
-#{perl_vendorlib}/Module
-#{_mandir}/*/*
-#{_bindir}/corelist
+%doc Changes README
+%{perl_vendorlib}/Module
+%{_mandir}/*/*
+%{_bindir}/corelist
