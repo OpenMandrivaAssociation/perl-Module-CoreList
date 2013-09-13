@@ -5,13 +5,12 @@ Summary:	Tell what modules shipped with versions of perl
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
 Release:	1
-License:	GPL+ or Artistic
+License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
 Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{modver}.tar.gz
-
-BuildRequires:	perl-devel
 BuildArch:	noarch
+BuildRequires:	perl-devel
 
 %description
 Module::CoreList contains data about what perl modules are shipped
@@ -33,6 +32,8 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 %files
 %doc Changes README
-%{perl_vendorlib}/Module
-%{_mandir}/*/*
 %{_bindir}/corelist
+%{perl_vendorlib}/Module
+%{_mandir}/man1/*
+%{_mandir}/man3/*
+
