@@ -1,5 +1,6 @@
 removed_sources:
   Module-CoreList-2.91.tar.gz: 8408cf45d3c5a99e68774f014cf193f0470c95b7
   Module-CoreList-2.97.tar.gz: 584f9e1ff123145a99c64ccba824dc3201aff5b2
-sources:
   Module-CoreList-3.04.tar.gz: dea8af1411ec7bc62b6fbfcbfc432f72e62b0eda
+sources:
+  Module-CoreList-3.06.tar.gz: 6a67bdb6ba36dabd481028518d046194c327b4a2
