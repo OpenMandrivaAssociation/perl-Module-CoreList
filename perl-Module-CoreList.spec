@@ -1,5 +1,5 @@
 %define modname Module-CoreList
-%define modver 3.06
+%define modver 3.07
 
 Summary:	Tell what modules shipped with versions of perl
 Name:		perl-%{modname}
@@ -8,7 +8,7 @@ Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
-Source0:	http://www.cpan.org/modules/by-module/Module/Module-CoreList-%{modver}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Module/%{modname}-%{modver}.tar.gz
 BuildArch:	noarch
 BuildRequires:	perl-devel
 
@@ -36,6 +36,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/Module
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
 
 
