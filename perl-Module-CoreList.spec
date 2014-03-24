@@ -1,5 +1,5 @@
 %define modname Module-CoreList
-%define modver 3.07
+%define modver 3.09
 
 Summary:	Tell what modules shipped with versions of perl
 Name:		perl-%{modname}
@@ -36,6 +36,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/Module
 %{_mandir}/man1/*
 %{_mandir}/man3/*
+
 
 
 
