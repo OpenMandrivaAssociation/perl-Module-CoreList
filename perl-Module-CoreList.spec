@@ -1,11 +1,11 @@
 %define modname Module-CoreList
-%define modver 3.11
+%define modver 5.021001
 
 Summary:	Tell what modules shipped with versions of perl
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
@@ -37,10 +37,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{perl_vendorlib}/Module
 %{_mandir}/man1/*
 %{_mandir}/man3/*
-
-
-
-
-
-
-
