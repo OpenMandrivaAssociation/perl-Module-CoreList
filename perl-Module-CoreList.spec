@@ -1,5 +1,5 @@
 %define modname Module-CoreList
-%define modver 5.021001
+%define modver 5.021003
 
 Summary:	Tell what modules shipped with versions of perl
 
