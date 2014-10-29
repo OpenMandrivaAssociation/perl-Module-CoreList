@@ -9,5 +9,6 @@ removed_sources:
   Module-CoreList-5.021001.tar.gz: 42d964e51ce8d080f5a844dfa6f9d52bf7330559
   Module-CoreList-5.021003.tar.gz: df33158cbd146fae70fb7cd4433a6e78ba3aef69
   Module-CoreList-5.20140914.tar.gz: 1275fd5ff5c8006fa9134f7590f8b92934b573e3
-sources:
   Module-CoreList-5.20141002.tar.gz: da81375733befd40f6e4d90fceb08fcdbb1f0ccb
+sources:
+  Module-CoreList-5.20141020.tar.gz: 6cb78b6e55f5ad7da0d901e4b9d48e2c6049e146
