@@ -1,11 +1,11 @@
 %define modname Module-CoreList
-%define modver 5.20141120
+%define modver 5.20180420
 
 Summary:	Tell what modules shipped with versions of perl
 
 Name:		perl-%{modname}
 Version:	%perl_convert_version %{modver}
-Release:	2
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{modname}
